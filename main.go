@@ -46,8 +46,12 @@ func main() {
 
 	http.HandleFunc("/", viewHandler)
 
-	fmt.Println("listening on port 3000")
-	http.ListenAndServe(":3000", nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
+	fmt.Println("listening on port", port)
+	http.ListenAndServe(":"+port, nil)
 }
 
 func viewHandler(w http.ResponseWriter, req *http.Request) {
