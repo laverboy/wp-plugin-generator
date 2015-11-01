@@ -48,6 +48,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
+		fmt.Println("port not set")
 		port = "3000"
 	}
 	fmt.Println("listening on port", port)
