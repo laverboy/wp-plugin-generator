@@ -4,7 +4,7 @@ import (
 	"archive/zip"
 	"bytes"
 	"fmt"
-	"github.com/gorilla/schema"
+	"github.com/laverboy/plugingenerator/Godeps/_workspace/src/github.com/gorilla/schema"
 	"html/template"
 	"io"
 	"io/ioutil"
