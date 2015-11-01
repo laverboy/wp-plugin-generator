@@ -1,10 +1,13 @@
 {
-    "ImportPath": "github.com/laverboy/plugingenerator",
-    "GoVersion": "go1.5.1",
-    "Deps": [
-        {
-            "ImportPath": "github.com/gorilla/schema"
-        }
-    ]
-
+	"ImportPath": "github.com/laverboy/plugingenerator",
+	"GoVersion": "go1.5.1",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/schema",
+			"Rev": "926ebf09a267e54fbbc610aad956a87595218169"
+		}
+	]
 }
