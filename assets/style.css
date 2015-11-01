@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 *{
     margin: 0;
@@ -113,7 +113,7 @@ html{
 form {
     box-sizing: border-box;
     max-width: 475px;
-    margin: 0 auto;
+    margin: 20px auto 10px;
     padding: 55px;
 
     background-color:  #ffffff;
