@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WP Plugin Starter</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div id="maincontent">
+
+        <form action="/" method="post">
+            <div class="form-title-row">
+                <h1>WP Plugin Starter</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Plugin Name</span>
+                    <input type="text" name="plugin-name" v-model="pluginname">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Plugin Short Name</span>
+                    <input type="text" name="short-name" v-model="shortname">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Description</span>
+                    <textarea name="description" v-model="description"></textarea>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Version</span>
+                    <input type="text" name="version" v-model="version">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <h3>Features</h3>
+                <div class="form-radio-buttons">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="example" value="true" checked><span>Example</span>
+                        </label>
+                        <p>Would you like to see an example of how to add a class to the plugin?</p>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="database" value="true" checked><span>Custom database table</span>
+                        </label>
+                        <p>Will you be using a custom table</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Generate Plugin</button>
+            </div>
+
+        </form>
+
+        <div class="preview">
+            <span>
+/**<br/>
+ * Plugin Name:       (% pluginname %)<br/>
+ * Description:       (% description %)<br/>
+ * Version:           (% version %)<br/>
+ * Author:            Reason Digital<br/>
+ */<br/>
+            </span>
+        </div>
+    </div>
+
+    <script src="assets/vue.min.js" charset="utf-8"></script>
+    <script src="assets/app.js" charset="utf-8"></script>
+</body>
+</html>
